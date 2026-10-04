@@ -109,6 +109,18 @@ auto makeProfile20100904() -> std::unique_ptr<compat::Profile>
     return p;
 }
 
+// The shared item filter reads 0x03C SHOP_LIST in the 2010 layout (8-byte entries). This build keeps
+// today's 12-byte entries, so run on them it took prices for item ids and shredded every shop list
+// (empty window, a stray price shown as gil). v2016 shopList filters the items itself.
+namespace
+{
+auto filterItemsS2C2016(MapSession* PSession, CBasicPacket& packet) -> Result
+{
+    return packet.getType() == 0x03C ? Result::Pass : filterItemsS2C(PSession, packet);
+}
+
+} // namespace
+
 auto makeProfile20160203(const compat::Platform platform) -> std::unique_ptr<compat::Profile>
 {
     const bool xbox = platform == compat::Platform::Xbox360;
@@ -132,7 +144,7 @@ auto makeProfile20160203(const compat::Platform platform) -> std::unique_ptr<com
     v2016::registerTranslators(*p);
 
     // As for 2010, with this build's own id maps (res/compat/<name>/)
-    p->s2cPass(filterItemsS2C);
+    p->s2cPass(filterItemsS2C2016);
     p->s2cPass(remapEntitiesS2C);
     p->c2sPass(remapEntitiesC2S);
     return p;
