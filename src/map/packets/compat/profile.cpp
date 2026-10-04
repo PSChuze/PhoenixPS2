@@ -148,6 +148,16 @@ void Profile::addBuild(std::string build)
     builds_.push_back(std::move(build));
 }
 
+void Profile::endsForUpdate(const uint16 zoneId, const uint16 eventId)
+{
+    endsForUpdate_.emplace(zoneId, eventId);
+}
+
+auto Profile::endIsUpdate(const uint16 zoneId, const uint16 eventId) const -> bool
+{
+    return endsForUpdate_.contains({ zoneId, eventId });
+}
+
 void Profile::s2c(const uint16 id, const Translator fn)
 {
     s2c_[id & 0x1FF] = fn;
@@ -288,6 +298,11 @@ auto zoneAvailable(const MapSession* PSession, const uint16 zoneId) -> bool
         return true;
     }
     return PSession->client.profile->maps().hasZoneData(zoneId);
+}
+
+auto endIsUpdate(const MapSession* PSession, const uint16 zoneId, const uint16 eventId) -> bool
+{
+    return PSession != nullptr && PSession->client.profile != nullptr && PSession->client.profile->endIsUpdate(zoneId, eventId);
 }
 
 auto active() -> const Profile&

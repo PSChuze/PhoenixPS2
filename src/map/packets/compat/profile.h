@@ -28,7 +28,9 @@
 
 #include <array>
 #include <memory>
+#include <set>
 #include <string>
+#include <utility>
 #include <vector>
 
 // Translation profiles: one per client build whose packets or data differ from today's.
@@ -112,6 +114,11 @@ public:
     // The build's id maps (res/compat/<name>/), loaded on first use
     auto maps() const -> const IdMaps&;
 
+    // Events whose script in this build ends where today's script sends an update, with the update's option as
+    // the end result (the Sparks of Eminence shops of the 2016 builds). The server runs the update first.
+    void endsForUpdate(uint16 zoneId, uint16 eventId);
+    auto endIsUpdate(uint16 zoneId, uint16 eventId) const -> bool;
+
     auto translateS2C(MapSession* PSession, CBasicPacket& packet) const -> Result;
     auto translateC2S(MapSession* PSession, CBasicPacket& packet) const -> Result;
 
@@ -127,6 +134,7 @@ private:
     std::vector<Translator>          s2cPasses_;
     std::vector<Translator>          c2sPasses_;
     mutable std::unique_ptr<IdMaps>  maps_;
+    std::set<std::pair<uint16, uint16>> endsForUpdate_; // (zone, event)
 };
 
 // Every registered profile
@@ -143,6 +151,9 @@ auto active() -> const Profile&;
 // client and every zone past 2010; zones a later build lacks) would stand in an empty zone. Clients without a
 // profile, and instanced zones (1000+), always can.
 auto zoneAvailable(const MapSession* PSession, uint16 zoneId) -> bool;
+
+// Does this session's client end the event where today's client sends an update (Profile::endsForUpdate)?
+auto endIsUpdate(const MapSession* PSession, uint16 zoneId, uint16 eventId) -> bool;
 
 // Translate one packet of a session that has a profile (PSession->client.profile)
 auto translateS2C(MapSession* PSession, CBasicPacket& packet) -> Result;

@@ -24,6 +24,7 @@
 #include "entities/base_entity.h"
 #include "entities/char_entity.h"
 #include "lua/luautils.h"
+#include "packets/compat/profile.h"
 #include "packets/s2c/0x052_eventucoff.h"
 
 auto GP_CLI_COMMAND_EVENTEND::validate(MapSession* PSession, const CCharEntity* PChar) const -> PacketValidationResult
@@ -59,6 +60,13 @@ void GP_CLI_COMMAND_EVENTEND::process(MapSession* PSession, CCharEntity* PChar) 
         break;
         case GP_CLI_COMMAND_EVENTEND_MODE::End:
         {
+            // A console build whose script ends this event where today's script sends an update (the 2016
+            // Sparks of Eminence shops): the end result is that update's option, so the update runs first
+            if (result != 0 && compat::endIsUpdate(PSession, static_cast<uint16>(PChar->getZone()), eventId))
+            {
+                luautils::OnEventUpdate(PChar, eventId, result);
+            }
+
             luautils::OnEventFinish(PChar, eventId, result);
             // reset if this event did not initiate another event
             if (PChar->currentEvent->eventId == eventId)

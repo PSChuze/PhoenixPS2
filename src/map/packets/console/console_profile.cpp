@@ -143,6 +143,13 @@ auto makeProfile20160203(const compat::Platform platform) -> std::unique_ptr<com
 
     v2016::registerTranslators(*p);
 
+    // This build's Sparks of Eminence shops end the event (op 0x21) where today's send an update (op 0x43), with
+    // the purchase as the end result: category | qty << 10 | item << 16 (xi.sparkshop.onEventUpdate)
+    p->endsForUpdate(230, 995);  // Southern San d'Oria, Rolandienne
+    p->endsForUpdate(235, 26);   // Bastok Markets, Isakoth
+    p->endsForUpdate(241, 850);  // Windurst Woods, Fhelm Jobeizat
+    p->endsForUpdate(256, 5081); // Western Adoulin, Eternal Flame
+
     // As for 2010, with this build's own id maps (res/compat/<name>/)
     p->s2cPass(filterItemsS2C2016);
     p->s2cPass(remapEntitiesS2C);
