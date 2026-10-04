@@ -244,7 +244,9 @@ auto itemMax(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 }
 
 // 0x03C GP_SERV_SHOP_LIST -- B 0x3BE3B0 / A 0x50BA10. Today's 12-byte entries; ShopIndex (entry +6) indexes an
-// 80-row table unchecked, and a packet without entries makes the client's count underflow.
+// 80-row table unchecked, and a packet without entries makes the client's count underflow. Items this
+// install lacks (ItemNo, entry +4) are dropped here: the shared item filter reads 0x03C in the 2010
+// layout and is not run on it for this build (console_profile.cpp).
 auto shopList(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 {
     const size_t size  = packet.getSize();
@@ -254,9 +256,11 @@ auto shopList(MapSession* /* PSession */, CBasicPacket& packet) -> Result
     for (size_t i = 0; i < count; ++i)
     {
         const uint8* e = data + 8 + i * 12;
+        uint16       itemNo;
         uint16       index;
+        std::memcpy(&itemNo, e + 4, 2);
         std::memcpy(&index, e + 6, 2);
-        if (index >= 80)
+        if (index >= 80 || !ids::hasItem(itemNo))
         {
             continue;
         }
