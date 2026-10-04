@@ -263,6 +263,7 @@ int32 MapNetworking::recv_parse(uint8* buff, size_t* buffsize, MapSession* PSess
         if (PSession == nullptr)
         {
             auto pendingSession = mapSessions_.getPendingSessionByCharId(packetCharID);
+            auto zoningSession  = mapSessions_.getSessionByCharId(packetCharID);
             if (pendingSession)
             {
                 mapSessions_.destroyPendingSession(pendingSession);
@@ -270,6 +271,17 @@ int32 MapNetworking::recv_parse(uint8* buff, size_t* buffsize, MapSession* PSess
                 if (PSession == nullptr)
                 {
                     // TODO: err msg?
+                    return -1;
+                }
+            }
+            else if (zoningSession && zoningSession->blowfish.status == BLOWFISH_PENDING_ZONE && zoningSession->client_ipp.getIP() == ipp.getIP())
+            {
+                // The character is zoning on this process and its client came back from the same address on another
+                // port (PCSX2 does this for the PS2). Keep its session instead of starting a second one: a second
+                // one would leave the first to time out, and that clean-up deletes the character's session row.
+                PSession = mapSessions_.moveSession(zoningSession, ipp);
+                if (PSession == nullptr)
+                {
                     return -1;
                 }
             }
