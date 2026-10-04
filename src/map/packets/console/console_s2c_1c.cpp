@@ -25,6 +25,7 @@
 #include "entities/char_entity.h"
 #include "event_info.h"
 #include "map_session.h"
+#include "packets/s2c/0x052_eventucoff.h"
 
 #include <algorithm>
 
@@ -405,9 +406,12 @@ auto shopBuy(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 // counterpart and the message is dropped rather than shown as the wrong text.
 // 0x032 EVENT / 0x033 EVENTSTR / 0x034 EVENTNUM: EventNum (the zone, whose event files the client
 // opens) and EventPara (the event). An event the zone's 2010 files do not carry runs on none of the
-// client's entities, and the client never sends its end: the player stays locked (Dkhaaya, zone 50).
-// Such an event is not sent, and the server's side of it is closed without its finish handler, as if
-// it never started (no quest progress, no reward).
+// client's entities, and the client never sends its end. The client also locks the player the moment
+// it asks to talk and waits for this event; receiving nothing, it would sit frozen in place with no
+// dialog (Dkhaaya, zone 50; Alaune starts event 3662 in zone 230). So the event is withheld and the
+// server's side of it is closed without its finish handler, as if it never started (no quest
+// progress, no reward) -- but we re-id the packet as EVENTUCOFF(Standard) so the client's talk lock
+// is released rather than leaving the player stuck.
 template <size_t kEventNumOffset>
 auto eventGuard(MapSession* PSession, CBasicPacket& packet) -> Result
 {
@@ -420,11 +424,30 @@ auto eventGuard(MapSession* PSession, CBasicPacket& packet) -> Result
 
     auto* PChar = PSession->PChar.get();
     ShowInfoFmt("console: event {} in zone {} is not in the 2010 data; skipped for {}", event, zone, PChar ? PChar->getName() : "?");
+
+    // This runs more than once for the same packet: send_parse translates a fresh copy of the queue
+    // on every compression attempt, and a packet that did not fit this tick's datagram is translated
+    // again in the next. The first pass closes the server's event, so a later pass finds it no longer
+    // current and used to drop the packet, losing the release and freezing the player. The session
+    // remembers what was withheld so every pass of that packet sends the same release.
+    const uint32 withheld = static_cast<uint32>(zone) << 16 | event;
     if (PChar && PChar->currentEvent && PChar->currentEvent->eventId == event)
     {
         PChar->endCurrentEvent();
+        PSession->consoleWithheldEvent = withheld;
     }
-    return Result::Drop;
+    else if (PSession->consoleWithheldEvent != withheld)
+    {
+        return Result::Drop;
+    }
+
+    // Release the talk lock the client took when it sent the trigger, in place of the event we
+    // withheld, by re-id-ing this packet as EVENTUCOFF(Standard). Dropping it would leave the
+    // player frozen (able to open menus, unable to move) until they zoned.
+    packet.setType(0x052);
+    packet.setSize(0x08); // header + Mode (u32)
+    packet.ref<uint32>(0x04) = static_cast<uint32>(GP_SERV_COMMAND_EVENTUCOFF_MODE::Standard);
+    return Result::Rewritten;
 }
 
 template <size_t kMesNumOffset>
