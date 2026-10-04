@@ -412,12 +412,21 @@ auto shopBuy(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 // server's side of it is closed without its finish handler, as if it never started (no quest
 // progress, no reward) -- but we re-id the packet as EVENTUCOFF(Standard) so the client's talk lock
 // is released rather than leaving the player stuck.
+//
+// Some events the files do carry are withheld the same way. Rhapsodies of Vana'diel is not supported on
+// console clients: its opening, 30035 on zone-in to any starting city, ran out of the
+// 2016 PS2 client's heap reloading the zone model and closed the game ("449a64"). Withheld, the mission is
+// never completed, so no later RoV cutscene is reached either.
+constexpr uint16 kWithheldEvents[] = {
+    30035, // RoV 1-1 Rhapsodies of Vana'diel opening (scripts/missions/rov/1_01_Rhapsodies_of_Vanadiel.lua)
+};
+
 template <size_t kEventNumOffset>
 auto eventGuard(MapSession* PSession, CBasicPacket& packet) -> Result
 {
     const auto zone  = packet.ref<uint16>(kEventNumOffset);
     const auto event = packet.ref<uint16>(kEventNumOffset + 2);
-    if (ids::hasEvent(zone, event))
+    if (ids::hasEvent(zone, event) && std::find(std::begin(kWithheldEvents), std::end(kWithheldEvents), event) == std::end(kWithheldEvents))
     {
         return Result::Pass;
     }
