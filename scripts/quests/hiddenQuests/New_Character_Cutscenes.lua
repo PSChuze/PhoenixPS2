@@ -20,16 +20,21 @@ quest.sections =
             onZoneIn =
             {
                 function(player, prevZone)
-                    player:setPos(-280, -12, -90, 0)
-                    if quest:getVar(player, 'nations') == 0 then
-                        player:setHomePoint()
-                    end
-
                     local cutsceneFlags = bit.bor(
                         xi.cutsceneFlag.RESET_CAMERA,
                         xi.cutsceneFlag.NO_PCS,
                         xi.cutsceneFlag.OPENING_MODE
                     )
+
+                    -- Second part, after the zone that follows event 0
+                    if quest:getVar(player, 'part2') == 1 then
+                        return { 7, -1, cutsceneFlags }
+                    end
+
+                    player:setPos(-280, -12, -90, 0)
+                    if quest:getVar(player, 'nations') == 0 then
+                        player:setHomePoint()
+                    end
 
                     return { 0, -1, cutsceneFlags } -- CS 0 is not a typo.
                 end
@@ -38,17 +43,11 @@ quest.sections =
             onEventFinish =
             {
                 [0] = function(player, csid, option, npc)
-                    -- Retail normally zones you for this -- but testing proved there was no difference other than NOT zoning by just calling the next event.
-                    -- event 0x00 fades your screen to black and seems to wait for another event, otherwise it will never fade back in.
-                    -- I think retail uses zoning to set the "isHidden" state we use for events.
-
-                    local cutsceneFlags = bit.bor(
-                        xi.cutsceneFlag.RESET_CAMERA,
-                        xi.cutsceneFlag.NO_PCS,
-                        xi.cutsceneFlag.OPENING_MODE
-                    )
-
-                    player:startEvent(7, { flags = cutsceneFlags, isHidden = true })
+                    -- Event 0x00 fades your screen to black and waits for another event, otherwise it never fades back in.
+                    -- Retail zones you here and plays event 7 on the zone-in. Starting event 7 in place works on today's
+                    -- PC client, but the console clients hang in it: they need the zone load first.
+                    quest:setVar(player, 'part2', 1)
+                    player:setPos(-280, -12, -90, 0, xi.zone.BASTOK_MARKETS)
                 end,
 
                 [7] = function(player, csid, option, npc)
@@ -58,6 +57,7 @@ quest.sections =
                     player:messageText(player, ID.text.MAP_MARKER_TUTORIAL)
 
                     quest:setVar(player, 'notSeen', 0)
+                    quest:setVar(player, 'part2', 0)
                     local nationsSeen = quest:getVar(player, 'nations')
                     quest:setVar(player, 'nations', utils.mask.setBit(nationsSeen, xi.nation.BASTOK, true))
                 end,
