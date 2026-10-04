@@ -451,6 +451,17 @@ auto partyRequest(MapSession* /* PSession */, CBasicPacket& packet) -> Result
     return Result::Rewritten;
 }
 
+// 0x063 MISCDATA. The 2016 handler (0x301DF0) switches on the u16 type at +0x04 and reads every type's
+// data from +0x08, as today. Type 4 (Monstrosity part 2, 0xAC bytes) is also what sets the flag that lets
+// the client finish its command table (0x00668F80 -> per-frame merge -> gate 0x00487000), so without it
+// Abilities > Job Abil. and Job Traits stay empty on every job. Type 6 (homepoints) crashes the client at
+// map-open (its masks start two bytes early for it), so it and the other post-2016 types stay dropped.
+auto miscData(MapSession* /* PSession */, CBasicPacket& packet) -> Result
+{
+    const auto type = packet.ref<uint16>(0x04);
+    return type == 2 || type == 4 ? Result::Pass : Result::Drop;
+}
+
 } // namespace
 
 void registerTranslators(compat::Profile& p)
@@ -467,6 +478,7 @@ void registerTranslators(compat::Profile& p)
     p.s2c(0x055, scenarioItem);
     p.s2c(0x05B, wpos);
     p.s2c(0x065, wpos);
+    p.s2c(0x063, miscData);
     p.s2c(0x072, drop); // BATTLEFIELD reply: LSB never sends it, layout unknown
     p.s2c(0x0C8, groupTbl);
     p.s2c(0x0C9, equipInspect);
