@@ -36,7 +36,6 @@ public:
 
     auto createSession(IPP ipp) -> MapSession*;
     auto createPendingSession(uint32 charId) -> MapSession*;
-    auto moveSession(MapSession* PSession, IPP ipp) -> MapSession*;
 
     auto getSessionByIPP(IPP ipp) -> MapSession*;
     auto getSessionByIPP(uint64 ipp) -> MapSession*;

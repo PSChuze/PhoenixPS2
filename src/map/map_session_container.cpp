@@ -66,27 +66,6 @@ auto MapSessionContainer::createSession(IPP ipp) -> MapSession*
     return sessions_[ipp].get();
 }
 
-// The session's client now sends from another address (PCSX2's networking gives the PS2 a new UDP port on some
-// zone changes): the session is reached there from now on. Null when the session is unknown or the address taken.
-auto MapSessionContainer::moveSession(MapSession* PSession, IPP ipp) -> MapSession*
-{
-    TracyZoneScoped;
-
-    const auto it = sessions_.find(PSession->client_ipp);
-    if (it == sessions_.end() || it->second.get() != PSession || sessions_.contains(ipp))
-    {
-        return nullptr;
-    }
-
-    ShowInfoFmt("Moving the session of charid {} from {} to {}", PSession->charID, PSession->client_ipp.toString(), ipp.toString());
-    auto session = std::move(it->second);
-    sessions_.erase(it);
-    session->client_ipp = ipp;
-    session->tapLastUpdate();
-    sessions_[ipp] = std::move(session);
-    return sessions_[ipp].get();
-}
-
 auto MapSessionContainer::createPendingSession(uint32 charId) -> MapSession*
 {
     TracyZoneScoped;

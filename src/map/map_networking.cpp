@@ -277,9 +277,12 @@ int32 MapNetworking::recv_parse(uint8* buff, size_t* buffsize, MapSession* PSess
             else if (zoningSession && zoningSession->blowfish.status == BLOWFISH_PENDING_ZONE && zoningSession->client_ipp.getIP() == ipp.getIP())
             {
                 // The character is zoning on this process and its client came back from the same address on another
-                // port (PCSX2 does this for the PS2). Keep its session instead of starting a second one: a second
-                // one would leave the first to time out, and that clean-up deletes the character's session row.
-                PSession = mapSessions_.moveSession(zoningSession, ipp);
+                // port (PCSX2 does this for the PS2). The client starts over as on a new login, so it gets a new
+                // session, and the old one is closed now: left to time out, its clean-up would delete the
+                // character's session row.
+                ShowInfoFmt("recv_parse: charid {} is zoning and came back from {} instead of {}; starting its session there", packetCharID, ipp.toString(), zoningSession->client_ipp.toString());
+                mapSessions_.destroySession(zoningSession);
+                PSession = mapSessions_.createSession(ipp);
                 if (PSession == nullptr)
                 {
                     return -1;
