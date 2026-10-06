@@ -1,6 +1,8 @@
 -----------------------------------
 -- Era Conquest Point Costs Module
 -- Adjusts conquest point costs for various items to era-appropriate values
+-- Settings (main.lua): CONQUEST_ERA_PRICES turns the price changes on or off,
+-- CONQUEST_ERA_REMOVALS turns the removed items on or off.
 -- TODO: Remove printToPlayer messages and getItemName function after DAT edits
 -----------------------------------
 local m = Module:new('era_conquest_costs')
@@ -24,11 +26,11 @@ end
 -- Set available = false to remove an item from availability (default is true)
 local eraCosts =
 {
-    -- Cost adjustments
+    -- Cost adjustments (CONQUEST_ERA_PRICES)
     [32928] = { 500, xi.item.SCROLL_OF_INSTANT_RERAISE },        -- 7 -> 500 CP
     [32929] = { 750, xi.item.SCROLL_OF_INSTANT_WARP },           -- 10 -> 750 CP
 
-    -- Remove items (not appropriate for 75-cap era)
+    -- Remove items (not appropriate for 75-cap era) (CONQUEST_ERA_REMOVALS)
     [32935] = { 0, xi.item.EMPEROR_BAND, false },                -- Remove Emperor Band
     [32936] = { 0, xi.item.WARP_RING, false },                   -- Remove Warp Ring
     [32937] = { 0, xi.item.CIPHER_OF_TENZENS_ALTER_EGO, false }, -- Remove Trust Ciphers
@@ -37,8 +39,26 @@ local eraCosts =
     [32942] = { 0, xi.item.CIPHER_OF_MAKKIS_ALTER_EGO, false },
 }
 
-m:addOverride('xi.conquest.overseerOnEventUpdate', function(player, csid, option, guardNation)
+-- Returns the era entry for an option, or nil when its setting is off and the stock shop applies
+local function getEraCost(option)
     local eraCost = eraCosts[option]
+    if not eraCost then
+        return nil
+    end
+
+    if eraCost[3] == false then
+        if xi.settings.main.CONQUEST_ERA_REMOVALS == 0 then
+            return nil
+        end
+    elseif xi.settings.main.CONQUEST_ERA_PRICES == 0 then
+        return nil
+    end
+
+    return eraCost
+end
+
+m:addOverride('xi.conquest.overseerOnEventUpdate', function(player, csid, option, guardNation)
+    local eraCost = getEraCost(option)
     if not eraCost then
         return super(player, csid, option, guardNation)
     end
@@ -79,7 +99,7 @@ end)
 
 -- Override event finish to charge correct costs
 m:addOverride('xi.conquest.overseerOnEventFinish', function(player, csid, option, guardNation, guardType, guardRegion)
-    local eraCost = eraCosts[option]
+    local eraCost = getEraCost(option)
     if not eraCost or option < 32768 or option > 32944 then
         return super(player, csid, option, guardNation, guardType, guardRegion)
     end
