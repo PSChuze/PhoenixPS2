@@ -3,10 +3,11 @@
 --
 -- Sanction is granted bare: the NPC never offers the regen, refresh or meal duration choice,
 -- and the effect carries no experience point bonus.
+-- Set DISABLE_SANCTION_BONUSES = 0 in main.lua to restore the stock Sanction.
 -----------------------------------
 require('modules/module_utils')
 
-local m = Module:new('disable_sanction_bonuses')
+local m = Module:new('disable_sanction_bonuses', xi.settings.main.DISABLE_SANCTION_BONUSES ~= 0)
 
 m:addOverride('xi.besieged.onTrigger', function(player, npc, eventBase)
     local mercenaryRank = xi.besieged.getMercenaryRank(player)

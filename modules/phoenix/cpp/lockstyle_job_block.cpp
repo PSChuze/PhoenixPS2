@@ -2,7 +2,9 @@
  * Lockstyle Job Block
  *
  * Disallows players from lockstyling gear they cannot currently equip.
+ * Set LOCKSTYLE_JOB_BLOCK = 0 in main.lua to allow it again.
  ************************************************************************/
+#include "common/settings.h"
 #include "map/entities/char_entity.h"
 #include "map/items/item_equipment.h"
 #include "map/packets/basic.h"
@@ -23,6 +25,11 @@ class LockstyleJobBlock : public CPPModule
     {
         // Return if the packet isn't lockstyle
         if (data.getType() != static_cast<uint16>(GP_CLI_COMMAND_LOCKSTYLE::packetId))
+        {
+            return false;
+        }
+
+        if (!settings::get<bool>("main.LOCKSTYLE_JOB_BLOCK"))
         {
             return false;
         }

@@ -5,6 +5,7 @@
 -- When 4 players are in the party, pets will only give 30% of their normal EXP (70% penalty).
 -- When 5 players are in the party, pets will only give 20% of their normal EXP (80% penalty).
 -- When 6 or more players are in the party/alliance, pets will only give 10% of their normal EXP (90% penalty).
+-- Set PET_EXP_PARTY_PENALTY = 0 in main.lua to turn off the pet penalty; the level-restricted zone penalty stays.
 -----------------------------------
 require('modules/module_utils')
 
@@ -99,7 +100,11 @@ m:addOverride('xi.experiencePoints.calculate', function(member, mob, data)
 
     local result = super(member, mob, calculationData)
 
-    if not result or data.partySize < 4 then
+    if
+        not result or
+        data.partySize < 4 or
+        xi.settings.main.PET_EXP_PARTY_PENALTY == 0
+    then
         return result
     end
 

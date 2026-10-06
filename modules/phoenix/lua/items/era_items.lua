@@ -2,8 +2,9 @@
 -- Era Items Module
 -- Adjusts item availability and properties to match era-appropriate values
 -- These are only meant to be here for items that require a DAT edit to change
+-- Set ERA_EXP_RING_LIMITS = 0 in main.lua to restore the stock values.
 -----------------------------------
-local m = Module:new('era_items')
+local m = Module:new('era_items', xi.settings.main.ERA_EXP_RING_LIMITS ~= 0)
 
 -- Chariot Band
 -- Bonus: +75%

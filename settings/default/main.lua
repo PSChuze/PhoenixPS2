@@ -332,6 +332,10 @@ xi.settings.main =
     GUILD_SHOP_HOLIDAYS          = false, -- true/false. Close each guild shop on its weekly holiday.
     ENABLE_COSMETIC_WARDROBE     = false, -- true/false. Mog Wardrobe 8 opens at 80 slots and only accepts the cosmetic item list. Requires the cosmetic_wardrobe modules.
     GUILD_SHOP_PERSISTENCE       = false, -- true/false. Guild shop stock and prices survive server restarts. Requires the guild_shop_persistence module.
+    DISABLE_SANCTION_BONUSES     = 1,     -- Set to 0 to let Sanction offer the regen, refresh or meal duration choice and grant its experience bonus again.
+    ERA_EXP_RING_LIMITS          = 1,     -- Set to 0 for the stock duration and bonus cap of the Chariot, Empress and Emperor Bands and the Anniversary Ring.
+    PET_EXP_PARTY_PENALTY        = 1,     -- Set to 0 to drop the pet experience penalty for parties of 4 or more (70/80/90% for 4/5/6+ members).
+    LOCKSTYLE_JOB_BLOCK          = 1,     -- Set to 0 to let lockstyle use gear the current job and level cannot equip.
 
     -- SYSTEM
     DISABLE_INACTIVITY_WATCHDOG = false, -- true/false. If this is enabled, the watchdog which detects if the main loop isn't being ticked will no longer be able to kill the process.
