@@ -458,12 +458,16 @@ auto partyRequest(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 // 0x063 MISCDATA. The 2016 handler (0x301DF0) switches on the u16 type at +0x04 and reads every type's
 // data from +0x08, as today. Type 4 (Monstrosity part 2, 0xAC bytes) is also what sets the flag that lets
 // the client finish its command table (0x00668F80 -> per-frame merge -> gate 0x00487000), so without it
-// Abilities > Job Abil. and Job Traits stay empty on every job. Type 6 (homepoints) crashes the client at
-// map-open (its masks start two bytes early for it), so it and the other post-2016 types stay dropped.
+// Abilities > Job Abil. and Job Traits stay empty on every job. Type 9 (status icons) is today's layout:
+// the handler copies 0xC0 bytes from +0x08 (u16 icons[32], then u32 timestamps[32] in 1/60 s) to 0x0066B500
+// and sets bit 0x10 of 0x0066B420. The status window (0x004EA5D0) reads it through 0x00301DC0 and takes the
+// timestamp of the matching icon, or shows no timer when it is missing, so dropping it hides every buff timer.
+// Type 6 (homepoints) crashes the client at map-open (its masks start two bytes early for it), so it and the
+// other post-2016 types stay dropped.
 auto miscData(MapSession* /* PSession */, CBasicPacket& packet) -> Result
 {
     const auto type = packet.ref<uint16>(0x04);
-    return type == 2 || type == 4 ? Result::Pass : Result::Drop;
+    return type == 2 || type == 4 || type == 9 ? Result::Pass : Result::Drop;
 }
 
 } // namespace
