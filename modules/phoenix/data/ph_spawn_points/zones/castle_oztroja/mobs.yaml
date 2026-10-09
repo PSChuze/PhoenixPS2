@@ -1,0 +1,32 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17395798: # Mee Deggi the Punisher placeholder
+    region: null
+    at:     [-207.840, -0.498, 109.939, 21]
+
+  17395799: # Mee Deggi the Punisher placeholder
+    region: null
+    at:     [-227.415, -4.340, 145.213, 127]
+
+  17395813: # Moo Ouzi the Swiftblade placeholder
+    region: null
+    at:     [-38.689, 0.191, -101.068, 119]
+
+  17395867: # Quu Domi the Gallant placeholder
+    region: null
+    at:     [59.000, -4.000, -131.000, 127]
+
+  17395868: # Quu Domi the Gallant placeholder
+    region: null
+    at:     [35.847, -0.500, -101.685, 22]
+
+  17395950: # Yaa Haqa the Profane placeholder
+    region: null
+    at:     [-24.719, -16.250, -139.678, 52]
+
+  17395953: # Yaa Haqa the Profane placeholder
+    region: null
+    at:     [-32.302, -16.250, -139.169, 1]

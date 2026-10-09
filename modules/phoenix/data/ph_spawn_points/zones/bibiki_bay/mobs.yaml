@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16793645: # Serra placeholder
+    region: null
+    at:     [-645.633, -0.298, -652.296, 224]
+
+  16793741: # Intulo placeholder
+    region: null
+    at:     [472.730, -5.487, 759.491, 171]
+
+  16793775: # Splacknuck placeholder
+    region: null
+    at:     [154.172, -43.935, 825.208, 253]

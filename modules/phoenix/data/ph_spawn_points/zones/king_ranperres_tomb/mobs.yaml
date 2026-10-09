@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17555661: # Gwyllgi placeholder
+    region: null
+    at:     [-65.363, 7.726, 75.649, 127]
+
+  17555662: # Gwyllgi placeholder
+    region: null
+    at:     [-54.443, 7.721, 82.184, 189]
+
+  17555667: # Crypt Ghost placeholder
+    region: null
+    at:     [-105.260, 8.500, 57.211, 31]

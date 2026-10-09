@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17268782: # Bashe placeholder
+    region: null
+    at:     [537.188, 6.167, -11.067, 127]
+
+  17268849: # Deadly Dodo placeholder
+    region: null
+    at:     [238.000, 40.000, 332.000, 67]
+
+  17269012: # Blighting Brand placeholder
+    region: null
+    at:     [-213.807, 7.009, 209.605, 127]

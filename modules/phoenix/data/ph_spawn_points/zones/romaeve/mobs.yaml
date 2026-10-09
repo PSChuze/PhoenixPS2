@@ -1,0 +1,24 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17276963: # Nightmare Vase placeholder
+    region: null
+    at:     [-144.695, 0.500, -95.692, 127]
+
+  17276972: # Nightmare Vase placeholder
+    region: null
+    at:     [158.766, 0.500, -87.935, 127]
+
+  17276981: # Nightmare Vase placeholder
+    region: null
+    at:     [-101.575, -6.099, -1.520, 127]
+
+  17276991: # Nightmare Vase placeholder
+    region: null
+    at:     [102.459, -6.364, 1.121, 127]
+
+  17277076: # Rogue Receptacle placeholder
+    region: null
+    at:     [271.039, 3.500, -13.155, 107]

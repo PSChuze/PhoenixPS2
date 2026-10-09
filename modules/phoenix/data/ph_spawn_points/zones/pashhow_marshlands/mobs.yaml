@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17223740: # NiZho Bladebender placeholder
+    region: null
+    at:     [-429.953, 24.500, -305.450, 127]
+
+  17223789: # NiZho Bladebender placeholder
+    region: null
+    at:     [11.309, 23.904, -337.923, 22]
+
+  17223888: # Jolly Green placeholder
+    region: null
+    at:     [184.993, 24.499, -41.790, 127]
+
+  17224014: # Bloodpool Vorax placeholder
+    region: null
+    at:     [-351.884, 24.014, 513.531, 127]

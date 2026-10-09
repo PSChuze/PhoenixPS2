@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17428551: # Sozu Sarberry placeholder
+    region: null
+    at:     [89.000, 0.499, -23.000, 127]
+
+  17428608: # Sozu Terberry placeholder
+    region: null
+    at:     [-122.000, 0.028, -13.000, 127]
+
+  17428675: # Tonberry Kinq placeholder
+    region: null
+    at:     [-218.000, -0.792, 24.000, 127]
+
+  17428741: # Flauros placeholder
+    region: null
+    at:     [261.000, 0.009, 129.000, 127]

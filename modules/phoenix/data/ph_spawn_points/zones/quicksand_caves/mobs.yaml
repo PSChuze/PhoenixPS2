@@ -1,0 +1,84 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17629237: # Centurio X-I placeholder
+    region: null
+    at:     [773.581, 1.576, -568.904, 61]
+
+  17629262: # Sabotender Bailarin placeholder
+    region: null
+    at:     [604.747, -6.437, -679.815, 66]
+
+  17629280: # Antican Praefectus placeholder
+    region: null
+    at:     [856.187, 1.120, -657.310, 11]
+
+  17629296: # Sagittarius X-XIII placeholder
+    region: null
+    at:     [641.000, -16.786, -774.000, 127]
+
+  17629397: # Nussknacker placeholder
+    region: null
+    at:     [200.000, 2.000, -4.000, 64]
+
+  17629409: # Antican Magister placeholder
+    region: null
+    at:     [-90.010, -0.567, -29.424, 127]
+
+  17629420: # Antican Proconsul placeholder
+    region: null
+    at:     [89.575, -0.299, -196.206, 127]
+
+  17629433: # Diamond Daig placeholder
+    region: null
+    at:     [-64.478, 1.344, -179.473, 106]
+
+  17629436: # Diamond Daig placeholder
+    region: null
+    at:     [-69.158, -0.286, -223.889, 127]
+
+  17629439: # Diamond Daig placeholder
+    region: null
+    at:     [-95.632, -0.500, -214.732, 51]
+
+  17629446: # Diamond Daig placeholder
+    region: null
+    at:     [-143.262, 1.433, -265.917, 90]
+
+  17629480: # Antican Tribunus placeholder
+    region: null
+    at:     [-606.985, -0.686, -380.910, 92]
+
+  17629525: # Triarius X-XV placeholder
+    region: null
+    at:     [-740.000, -0.766, -378.000, 121]
+
+  17629529: # Triarius X-XV placeholder
+    region: null
+    at:     [-750.658, -0.385, -339.890, 71]
+
+  17629533: # Triarius X-XV placeholder
+    region: null
+    at:     [-786.730, -0.500, -343.963, 127]
+
+  17629537: # Triarius X-XV placeholder
+    region: null
+    at:     [-817.089, -0.500, -386.251, 37]
+
+  17629557: # Hastatus XI-XII placeholder
+    region: null
+    at:     [-343.859, -0.411, 751.608, 36]
+
+  17629582: # Sabotender Bailarina placeholder
+    region: null
+    at:     [-456.949, -0.456, 780.811, 127]
+
+  17629586: # Sabotender Bailarina placeholder
+    region: null
+    at:     [-523.227, 0.475, 778.691, 127]
+
+  17629590: # Sabotender Bailarina placeholder
+    region: null
+    at:     [-541.972, 0.586, 757.460, 127]

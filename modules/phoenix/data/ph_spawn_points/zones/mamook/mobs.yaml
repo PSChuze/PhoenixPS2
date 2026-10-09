@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17043553: # Zizzy Zillah placeholder
+    region: null
+    at:     [115.616, 14.335, -197.514, 135]
+
+  17043770: # Firedance Magmaal Ja placeholder
+    region: null
+    at:     [-131.006, 17.377, -352.236, 202]
+
+  17043773: # Firedance Magmaal Ja placeholder
+    region: null
+    at:     [-201.522, 17.209, -363.865, 202]

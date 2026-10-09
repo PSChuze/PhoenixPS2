@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17231970: # Nue placeholder
+    region: null
+    at:     [-322.000, -100.000, 116.000, 93]
+
+  17232043: # Kirata placeholder
+    region: null
+    at:     [69.336, -0.234, -276.561, 127]
+
+  17232078: # Gargantua placeholder
+    region: null
+    at:     [339.000, -0.472, -20.000, 127]

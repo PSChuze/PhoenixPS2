@@ -1,0 +1,36 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17645605: # Goblinsavior Heronox placeholder
+    region: null
+    at:     [152.325, -10.702, -77.007, 15]
+
+  17645633: # Wyvernpoacher Drachlox placeholder
+    region: null
+    at:     [-100.000, 1.000, -44.000, 127]
+
+  17645718: # Baobhan Sith placeholder
+    region: null
+    at:     [187.000, 9.000, 105.000, 127]
+
+  17645738: # Taxim placeholder
+    region: null
+    at:     [-137.334, -0.108, 48.105, 32]
+
+  17645754: # Ungur placeholder
+    region: null
+    at:     [-316.000, -9.000, 3.000, 61]
+
+  17645768: # Amikiri placeholder
+    region: null
+    at:     [-228.872, -0.264, 144.689, 55]
+
+  17645772: # Amikiri placeholder
+    region: null
+    at:     [-209.552, -0.257, 161.728, 127]
+
+  17645784: # Ungur placeholder
+    region: null
+    at:     [-123.856, 0.239, 223.303, 67]

@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17215612: # Carnero placeholder
+    region: null
+    at:     [164.245, -39.900, -347.878, 127]
+
+  17215867: # Leaping Lizzy placeholder
+    region: null
+    at:     [-275.441, 20.451, -347.294, 20]

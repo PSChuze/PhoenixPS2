@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17457200: # Gloom Eye placeholder
+    region: null
+    at:     [-152.136, -5.216, -89.814, 112]
+
+  17457229: # Hyakume placeholder
+    region: null
+    at:     [125.987, 3.561, -57.222, 127]

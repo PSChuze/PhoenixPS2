@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17256560: # Serpopard Ishtar placeholder
+    region: null
+    at:     [-9.176, -8.191, -64.347, 127]
+
+  17256686: # Serpopard Ishtar placeholder
+    region: null
+    at:     [-23.900, 27.960, 282.280, 125]
+
+  17256835: # Herbage Hunter placeholder
+    region: null
+    at:     [-119.301, 24.087, 448.636, 111]

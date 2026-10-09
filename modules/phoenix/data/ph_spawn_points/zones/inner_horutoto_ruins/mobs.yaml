@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17563783: # Slendlix Spindlethumb placeholder
+    region: null
+    at:     [-266.376, -0.002, -221.677, 127]
+
+  17563797: # Nocuous Weapon placeholder
+    region: null
+    at:     [-252.663, 0.482, -28.931, 70]
+
+  17563799: # Nocuous Weapon placeholder
+    region: null
+    at:     [-237.426, 0.500, -23.412, 113]

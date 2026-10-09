@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17199434: # Valkurm Emperor placeholder
+    region: null
+    at:     [-228.957, 2.776, -101.226, 63]
+
+  17199562: # Golden Bat placeholder
+    region: null
+    at:     [-804.502, -8.567, 22.082, 127]

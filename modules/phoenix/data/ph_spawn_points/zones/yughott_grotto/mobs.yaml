@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17358928: # Ashmaker Gotblut placeholder
+    region: null
+    at:     [54.431, -1.196, 13.552, 111]
+
+  17358929: # Ashmaker Gotblut placeholder
+    region: null
+    at:     [16.061, -1.383, 10.996, 127]

@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17350823: # Thousandarm Deshglesh placeholder
+    region: null
+    at:     [116.798, 0.000, 327.326, 78]
+
+  17350824: # Thousandarm Deshglesh placeholder
+    region: null
+    at:     [82.000, -0.500, 366.000, 111]
+
+  17350825: # Thousandarm Deshglesh placeholder
+    region: null
+    at:     [123.357, -0.102, 332.706, 127]

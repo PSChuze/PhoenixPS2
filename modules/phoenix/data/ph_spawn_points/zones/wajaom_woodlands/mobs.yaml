@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16986196: # Zoraal Jas Pkuucha placeholder
+    region: null
+    at:     [203.000, -16.000, -74.000, 127]
+
+  16986377: # Jaded Jody placeholder
+    region: null
+    at:     [-468.000, -9.000, -449.000, 127]

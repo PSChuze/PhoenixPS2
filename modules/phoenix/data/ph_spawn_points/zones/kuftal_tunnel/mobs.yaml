@@ -1,0 +1,48 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17489979: # Sabotender Mariachi placeholder
+    region: null
+    at:     [-58.807, -0.327, -8.531, 7]
+
+  17489986: # Sabotender Mariachi placeholder
+    region: null
+    at:     [-34.957, -0.402, 41.675, 214]
+
+  17490002: # Amemet placeholder
+    region: null
+    at:     [89.590, -0.321, -9.390, 36]
+
+  17490015: # Amemet placeholder
+    region: null
+    at:     [-17.000, -19.000, -203.000, 127]
+
+  17490100: # Pelican placeholder
+    region: null
+    at:     [188.610, 19.245, -50.076, 57]
+
+  17490158: # Bloodthirster Madkix placeholder
+    region: null
+    at:     [256.673, 10.146, 43.678, 242]
+
+  17490201: # Yowie placeholder
+    region: null
+    at:     [67.595, 20.615, 56.020, 211]
+
+  17490203: # Yowie placeholder
+    region: null
+    at:     [23.071, 20.424, 64.804, 227]
+
+  17490212: # Arachne placeholder
+    region: null
+    at:     [15.138, 18.843, 29.502, 79]
+
+  17490216: # Arachne placeholder
+    region: null
+    at:     [6.455, 19.768, 25.623, 227]
+
+  17490220: # Arachne placeholder
+    region: null
+    at:     [-21.927, 18.974, 24.770, 77]

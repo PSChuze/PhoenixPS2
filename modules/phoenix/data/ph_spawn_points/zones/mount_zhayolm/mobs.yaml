@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17027146: # Energetic Eruca placeholder
+    region: null
+    at:     [183.720, -14.100, -171.930, 82]
+
+  17027422: # Ignamoth placeholder
+    region: null
+    at:     [-544.300, -14.800, 262.992, 9]

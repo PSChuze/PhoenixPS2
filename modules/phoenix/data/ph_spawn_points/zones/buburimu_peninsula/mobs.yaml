@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17260906: # Helldiver placeholder
+    region: null
+    at:     [509.641, 0.151, -267.664, 127]
+
+  17261002: # Buburimboo placeholder
+    region: null
+    at:     [442.901, 19.500, 109.075, 127]

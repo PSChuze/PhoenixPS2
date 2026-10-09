@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16875711: # Megalobugard placeholder
+    region: null
+    at:     [-227.421, -15.577, 99.951, 10]
+
+  16875720: # Megalobugard placeholder
+    region: null
+    at:     [-127.993, -16.451, 67.808, 53]
+
+  16875739: # Megalobugard placeholder
+    region: null
+    at:     [-190.875, -7.993, 29.479, 5]

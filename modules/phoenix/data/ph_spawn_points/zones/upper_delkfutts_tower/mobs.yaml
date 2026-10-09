@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17424388: # Enkelados placeholder
+    region: null
+    at:     [-371.586, -144.367, 28.244, 45]
+
+  17424426: # Enkelados placeholder
+    region: null
+    at:     [-215.194, -144.099, 19.528, 127]
+
+  17424474: # Ixtab placeholder
+    region: null
+    at:     [-358.249, -159.924, 79.765, 68]
+
+  17424511: # Ixtab placeholder
+    region: null
+    at:     [-362.595, -176.133, 85.139, 68]

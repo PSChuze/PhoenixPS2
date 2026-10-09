@@ -1,0 +1,8 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16814319: # Gyre-Carlin placeholder
+    region: null
+    at:     [-66.047, -0.352, 186.872, 222]

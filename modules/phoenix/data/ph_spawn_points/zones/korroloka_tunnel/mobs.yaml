@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17486002: # Cargo Crab Colin placeholder
+    region: null
+    at:     [-30.384, 1.000, -33.277, 111]
+
+  17486004: # Cargo Crab Colin placeholder
+    region: null
+    at:     [-95.359, 1.000, -34.375, 127]
+
+  17486030: # Falcatus Aranei placeholder
+    region: null
+    at:     [-63.688, -4.529, 139.858, 253]
+
+  17486128: # Dame Blanche placeholder
+    region: null
+    at:     [-345.369, 0.716, 119.486, 127]

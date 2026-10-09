@@ -1,0 +1,36 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17191187: # Swamfisk placeholder
+    region: null
+    at:     [379.120, -27.898, -46.436, 17]
+
+  17191188: # Swamfisk placeholder
+    region: null
+    at:     [417.542, -17.210, -177.883, 127]
+
+  17191194: # Bigmouth Billy placeholder
+    region: null
+    at:     [453.625, -18.436, -127.048, 45]
+
+  17191195: # Bigmouth Billy placeholder
+    region: null
+    at:     [480.384, -17.286, -265.147, 127]
+
+  17191287: # Swamfisk placeholder
+    region: null
+    at:     [443.334, -17.000, -303.275, 127]
+
+  17191288: # Swamfisk placeholder
+    region: null
+    at:     [423.000, -16.000, -285.000, 20]
+
+  17191289: # Swamfisk placeholder
+    region: null
+    at:     [461.268, -6.674, -391.342, 55]
+
+  17191290: # Swamfisk placeholder
+    region: null
+    at:     [459.345, -6.686, -363.842, 127]

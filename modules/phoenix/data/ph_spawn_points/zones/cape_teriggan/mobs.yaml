@@ -1,0 +1,24 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17240166: # Killer Jonny placeholder
+    region: null
+    at:     [-41.000, 0.351, 120.000, 127]
+
+  17240371: # Frostmane placeholder
+    region: null
+    at:     [-262.000, -0.700, 442.000, 127]
+
+  17240372: # Frostmane placeholder
+    region: null
+    at:     [-272.224, -0.942, 461.321, 127]
+
+  17240373: # Frostmane placeholder
+    region: null
+    at:     [-268.000, -0.558, 440.000, 127]
+
+  17240374: # Frostmane placeholder
+    region: null
+    at:     [-283.874, -0.660, 485.504, 127]

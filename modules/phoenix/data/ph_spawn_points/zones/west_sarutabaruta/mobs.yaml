@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17248467: # Tom Tit Tat placeholder
+    region: null
+    at:     [31.149, -20.045, 358.265, 61]
+
+  17248485: # Tom Tit Tat placeholder
+    region: null
+    at:     [245.293, -22.125, 423.282, 127]
+
+  17248516: # Nunyenunc placeholder
+    region: null
+    at:     [53.159, -24.540, 554.652, 93]

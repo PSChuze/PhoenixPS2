@@ -1,0 +1,28 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17289452: # Celphie placeholder
+    region: null
+    at:     [50.014, 0.256, 7.088, 127]
+
+  17289545: # Calchas placeholder
+    region: null
+    at:     [-450.751, -4.779, -292.847, 127]
+
+  17289559: # Cactuar Cantautor placeholder
+    region: null
+    at:     [-458.944, 0.018, -557.266, 127]
+
+  17289630: # Picolaton placeholder
+    region: null
+    at:     [-638.197, 0.472, -619.448, 127]
+
+  17289637: # Picolaton placeholder
+    region: null
+    at:     [-685.635, -9.206, -701.860, 126]
+
+  17289647: # Picolaton placeholder
+    region: null
+    at:     [-757.000, -20.500, -762.000, 5]

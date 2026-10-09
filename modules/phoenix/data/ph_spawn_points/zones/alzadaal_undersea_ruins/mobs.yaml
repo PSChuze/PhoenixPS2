@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17072142: # Cookieduster Lipiroon placeholder
+    region: null
+    at:     [-112.599, -8.000, 104.053, 239]
+
+  17072148: # Cookieduster Lipiroon placeholder
+    region: null
+    at:     [-171.052, -8.343, 59.996, 222]

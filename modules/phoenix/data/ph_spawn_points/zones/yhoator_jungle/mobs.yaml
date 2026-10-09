@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17285389: # Hoar-knuckled Rimberry placeholder
+    region: null
+    at:     [-5.443, -0.332, -399.649, 41]
+
+  17285393: # Hoar-knuckled Rimberry placeholder
+    region: null
+    at:     [24.922, -5.023, -423.784, 19]

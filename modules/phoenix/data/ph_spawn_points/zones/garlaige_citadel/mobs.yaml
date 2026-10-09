@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17596515: # Hazmat placeholder
+    region: null
+    at:     [5.839, 7.014, 197.462, 127]
+
+  17596624: # Hovering Hotpot placeholder
+    region: null
+    at:     [180.846, -0.014, 24.911, 20]
+
+  17596626: # Hovering Hotpot placeholder
+    region: null
+    at:     [153.345, -0.012, 18.278, 123]

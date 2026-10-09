@@ -1,0 +1,88 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17498156: # Masan placeholder
+    region: null
+    at:     [18.702, 9.512, 183.594, 57]
+
+  17498178: # Namtar placeholder
+    region: null
+    at:     [-128.762, 9.595, 164.996, 127]
+
+  17498183: # Namtar placeholder
+    region: null
+    at:     [-157.606, 9.905, 168.518, 127]
+
+  17498196: # Wuur the Sandcomber placeholder
+    region: null
+    at:     [10.799, -0.665, 102.446, 127]
+
+  17498259: # Fyuu the Seabellow placeholder
+    region: null
+    at:     [217.570, 19.945, 22.121, 127]
+
+  17498266: # Fyuu the Seabellow placeholder
+    region: null
+    at:     [185.074, 20.252, 39.317, 119]
+
+  17498280: # Qull the Shellbuster placeholder
+    region: null
+    at:     [348.293, 10.133, -65.543, 21]
+
+  17498283: # Qull the Shellbuster placeholder
+    region: null
+    at:     [363.430, 10.578, -62.752, 105]
+
+  17498298: # Seww the Squidlimbed placeholder
+    region: null
+    at:     [232.828, 9.860, 63.214, 127]
+
+  17498336: # Pahh the Gullcaller placeholder
+    region: null
+    at:     [-13.532, 21.301, -20.861, 127]
+
+  17498355: # Mouu the Waverider placeholder
+    region: null
+    at:     [-60.728, 19.884, 53.966, 105]
+
+  17498410: # Worr the Clawfisted placeholder
+    region: null
+    at:     [-308.649, 17.344, -52.316, 127]
+
+  17498418: # Sea Hog placeholder
+    region: null
+    at:     [-221.455, 9.542, -44.191, 127]
+
+  17498419: # Sea Hog placeholder
+    region: null
+    at:     [-249.000, 10.000, -57.000, 20]
+
+  17498426: # Voll the Sharkfinned placeholder
+    region: null
+    at:     [-337.035, 16.950, -106.841, 115]
+
+  17498434: # Yarr the Pearleyed placeholder
+    region: null
+    at:     [1.654, 19.914, -113.913, 127]
+
+  17498444: # Novv the Whitehearted placeholder
+    region: null
+    at:     [-38.302, 19.997, -194.269, 127]
+
+  17498461: # Denn the Orcavoiced placeholder
+    region: null
+    at:     [-102.127, 9.797, -308.149, 98]
+
+  17498513: # Zuug the Shoreleaper placeholder
+    region: null
+    at:     [-231.975, 39.083, -294.117, 127]
+
+  17498518: # Charybdis placeholder
+    region: null
+    at:     [-212.407, 38.538, -342.544, 127]
+
+  17498521: # Charybdis placeholder
+    region: null
+    at:     [-167.247, 48.358, -336.823, 2]

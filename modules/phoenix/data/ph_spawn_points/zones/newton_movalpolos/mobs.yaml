@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16826507: # Swashstox Beadblinker placeholder
+    region: null
+    at:     [92.145, 15.500, 66.595, 140]
+
+  16826514: # Swashstox Beadblinker placeholder
+    region: null
+    at:     [117.092, 15.398, -20.675, 128]

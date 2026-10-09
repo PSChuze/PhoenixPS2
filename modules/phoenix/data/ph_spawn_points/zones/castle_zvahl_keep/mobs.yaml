@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17440962: # Baron Vapula placeholder
+    region: null
+    at:     [-254.000, -52.125, 86.000, 127]
+
+  17440968: # Count Bifrons placeholder
+    region: null
+    at:     [-204.000, -52.125, -95.000, 127]
+
+  17440973: # Viscount Morax placeholder
+    region: null
+    at:     [-365.684, -52.125, -136.540, 127]
+
+  17440985: # Baronet Romwe placeholder
+    region: null
+    at:     [-335.444, -52.125, 15.148, 89]

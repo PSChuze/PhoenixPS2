@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17203447: # Fradubio placeholder
+    region: null
+    at:     [9.320, -0.493, -371.654, 4]
+
+  17203493: # Supplespine Mujwuj placeholder
+    region: null
+    at:     [434.152, -9.488, -280.957, 127]
+
+  17203581: # Panzer Percival placeholder
+    region: null
+    at:     [535.504, -1.517, 152.171, 53]
+
+  17203637: # Panzer Percival placeholder
+    region: null
+    at:     [239.541, -0.365, 559.722, 127]

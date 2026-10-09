@@ -1,0 +1,24 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17227968: # Black Triple Stars placeholder
+    region: null
+    at:     [4.000, -16.000, -119.000, 54]
+
+  17227988: # Black Triple Stars placeholder
+    region: null
+    at:     [76.000, -15.000, -209.000, 127]
+
+  17228149: # Eldritch Edge placeholder
+    region: null
+    at:     [389.529, -25.065, -146.909, 127]
+
+  17228152: # Eldritch Edge placeholder
+    region: null
+    at:     [440.000, -28.000, -44.000, 57]
+
+  17228235: # Drooling Daisy placeholder
+    region: null
+    at:     [-691.786, -34.802, -335.763, 127]

@@ -1,0 +1,36 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17387560: # Hawkeyed Dnatbat placeholder
+    region: null
+    at:     [336.498, -0.563, -138.502, 104]
+
+  17387563: # Hawkeyed Dnatbat placeholder
+    region: null
+    at:     [371.525, 0.235, -176.188, 126]
+
+  17387578: # Steelbiter Gudrud placeholder
+    region: null
+    at:     [252.457, 3.501, -248.655, 127]
+
+  17387605: # Tigerbane Bakdak placeholder
+    region: null
+    at:     [161.440, 0.000, -14.975, 94]
+
+  17387623: # Poisonhand Gnadgad placeholder
+    region: null
+    at:     [-19.933, -0.906, -7.868, 127]
+
+  17387624: # Poisonhand Gnadgad placeholder
+    region: null
+    at:     [-17.206, -0.588, -20.429, 16]
+
+  17387638: # Poisonhand Gnadgad placeholder
+    region: null
+    at:     [-50.158, -0.537, 22.257, 90]
+
+  17387919: # Blubbery Bulge placeholder
+    region: null
+    at:     [-225.237, 2.295, -294.764, 94]

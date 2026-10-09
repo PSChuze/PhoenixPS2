@@ -1,0 +1,56 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17403938: # Ellyllon placeholder
+    region: null
+    at:     [192.540, 8.532, -163.410, 217]
+
+  17403999: # Aquarius placeholder
+    region: null
+    at:     [195.370, 8.972, -73.536, 250]
+
+  17404004: # Aquarius placeholder
+    region: null
+    at:     [149.590, 9.765, -61.490, 143]
+
+  17404027: # Unut placeholder
+    region: null
+    at:     [60.408, 8.711, 82.500, 188]
+
+  17404043: # Unut placeholder
+    region: null
+    at:     [51.304, 8.562, 137.005, 124]
+
+  17404053: # Unut placeholder
+    region: null
+    at:     [-11.240, 8.889, 126.622, 202]
+
+  17404060: # Unut placeholder
+    region: null
+    at:     [1.725, 8.846, 80.469, 127]
+
+  17404292: # Leshonki placeholder
+    region: null
+    at:     [-195.000, 11.553, 20.129, 124]
+
+  17404294: # Leshonki placeholder
+    region: null
+    at:     [-223.500, 14.430, 23.877, 195]
+
+  17404296: # Leshonki placeholder
+    region: null
+    at:     [-216.400, 14.317, 56.532, 110]
+
+  17404301: # Leshonki placeholder
+    region: null
+    at:     [-197.800, 11.135, 100.781, 178]
+
+  17404304: # Leshonki placeholder
+    region: null
+    at:     [-181.700, 11.329, 82.953, 180]
+
+  17404330: # Voluptuous Vivian placeholder
+    region: null
+    at:     [-195.700, 5.649, 199.960, 213]

@@ -1,0 +1,20 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17363180: # BuGhi Howlblade placeholder
+    region: null
+    at:     [167.207, -18.027, 159.374, 44]
+
+  17363205: # ZiGhi Boneeater placeholder
+    region: null
+    at:     [130.386, -32.313, 73.967, 5]
+
+  17363256: # BeHya Hundredwall placeholder
+    region: null
+    at:     [253.869, -31.740, -69.220, 127]
+
+  17363257: # BeHya Hundredwall placeholder
+    region: null
+    at:     [264.534, -31.961, -68.647, 104]

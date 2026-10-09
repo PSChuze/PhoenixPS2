@@ -1,0 +1,36 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17432622: # Celeste-eyed Tozberry placeholder
+    region: null
+    at:     [146.000, 15.412, -102.000, 127]
+
+  17432638: # Friar Rush placeholder
+    region: null
+    at:     [-87.587, 15.469, -6.522, 127]
+
+  17432662: # Carmine-tailed Janberry placeholder
+    region: null
+    at:     [32.000, 36.000, -109.000, 127]
+
+  17432671: # Carmine-tailed Janberry placeholder
+    region: null
+    at:     [39.428, 36.480, -136.605, 127]
+
+  17432787: # Tawny-fingered Mugberry placeholder
+    region: null
+    at:     [76.568, 15.606, -165.687, 127]
+
+  17432820: # Bistre-hearted Malberry placeholder
+    region: null
+    at:     [-48.577, 15.486, -182.078, 97]
+
+  17432973: # Ogama placeholder
+    region: null
+    at:     [-42.305, 35.356, -348.654, 133]
+
+  17432979: # Ogama placeholder
+    region: null
+    at:     [-21.000, 36.000, -351.000, 18]

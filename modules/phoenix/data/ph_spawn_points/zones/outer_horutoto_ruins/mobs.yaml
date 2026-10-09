@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17571868: # Desmodont placeholder
+    region: null
+    at:     [-377.758, -0.054, 737.730, 28]
+
+  17571896: # Ah Puch placeholder
+    region: null
+    at:     [-418.000, -1.000, 590.000, 127]
+
+  17571900: # Ah Puch placeholder
+    region: null
+    at:     [-417.000, -1.000, 661.000, 127]

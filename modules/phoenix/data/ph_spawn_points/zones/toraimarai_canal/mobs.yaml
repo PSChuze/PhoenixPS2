@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17469575: # Canal Moocher placeholder
+    region: null
+    at:     [-134.900, 21.986, 18.316, 84]
+
+  17469629: # Konjac placeholder
+    region: null
+    at:     [61.374, 21.875, 132.970, 156]

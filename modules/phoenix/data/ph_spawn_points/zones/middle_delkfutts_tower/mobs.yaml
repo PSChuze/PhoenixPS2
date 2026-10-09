@@ -1,0 +1,32 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17420325: # Eurytos placeholder
+    region: null
+    at:     [16.276, -47.708, 110.263, 125]
+
+  17420326: # Eurytos placeholder
+    region: null
+    at:     [-5.000, -47.705, 60.000, 21]
+
+  17420383: # Polybotes placeholder
+    region: null
+    at:     [-42.392, -63.535, -0.946, 127]
+
+  17420419: # Rhoitos placeholder
+    region: null
+    at:     [77.924, -80.084, 70.787, 124]
+
+  17420527: # Ophion placeholder
+    region: null
+    at:     [-384.000, -95.529, 14.000, 127]
+
+  17420556: # Rhoikos placeholder
+    region: null
+    at:     [-416.718, -112.115, -13.175, 127]
+
+  17420593: # Ogygos placeholder
+    region: null
+    at:     [-503.000, -127.715, 24.000, 95]

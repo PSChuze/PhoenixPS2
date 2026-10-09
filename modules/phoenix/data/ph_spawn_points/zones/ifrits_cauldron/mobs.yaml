@@ -1,0 +1,44 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17616996: # Tyrannic Tunnok placeholder
+    region: null
+    at:     [-116.064, 19.683, -69.784, 109]
+
+  17617001: # Tyrannic Tunnok placeholder
+    region: null
+    at:     [-116.185, 20.097, -114.903, 127]
+
+  17617008: # Lindwurm placeholder
+    region: null
+    at:     [-229.694, 3.861, -163.693, 127]
+
+  17617012: # Lindwurm placeholder
+    region: null
+    at:     [-233.159, 3.586, -138.710, 60]
+
+  17617055: # Foreseer Oramix placeholder
+    region: null
+    at:     [-95.952, 2.005, 182.112, 203]
+
+  17617056: # Foreseer Oramix placeholder
+    region: null
+    at:     [-107.442, 3.193, 155.843, 114]
+
+  17617066: # Foreseer Oramix placeholder
+    region: null
+    at:     [-77.756, 3.464, 171.136, 189]
+
+  17617069: # Foreseer Oramix placeholder
+    region: null
+    at:     [-75.000, 4.000, 156.000, 127]
+
+  17617118: # Vouivre placeholder
+    region: null
+    at:     [-20.388, 4.000, 239.845, 124]
+
+  17617122: # Vouivre placeholder
+    region: null
+    at:     [-57.154, 3.346, 223.026, 122]

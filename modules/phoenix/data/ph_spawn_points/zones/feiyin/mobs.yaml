@@ -1,0 +1,48 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17612857: # Mind Hoarder placeholder
+    region: null
+    at:     [36.859, -15.590, -40.449, 239]
+
+  17613046: # Goliath placeholder
+    region: null
+    at:     [-194.800, -0.097, 169.233, 132]
+
+  17613048: # Goliath placeholder
+    region: null
+    at:     [-110.000, -0.092, 112.000, 127]
+
+  17613049: # Goliath placeholder
+    region: null
+    at:     [-188.700, -0.092, 149.289, 172]
+
+  17613050: # Goliath placeholder
+    region: null
+    at:     [-48.000, -0.112, 110.000, 67]
+
+  17613052: # Goliath placeholder
+    region: null
+    at:     [-189.100, -0.112, 127.990, 242]
+
+  17613054: # Goliath placeholder
+    region: null
+    at:     [-90.000, -0.112, 72.000, 37]
+
+  17613093: # Western Shadow placeholder
+    region: null
+    at:     [-206.300, -16.120, 110.515, 36]
+
+  17613098: # Northern Shadow placeholder
+    region: null
+    at:     [-158.900, -16.120, 147.972, 118]
+
+  17613108: # Eastern Shadow placeholder
+    region: null
+    at:     [-91.500, -16.060, 159.867, 102]
+
+  17613117: # Southern Shadow placeholder
+    region: null
+    at:     [-163.200, -15.620, 77.279, 165]

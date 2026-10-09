@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16990305: # Mahishasura placeholder
+    region: null
+    at:     [163.000, -16.000, 312.000, 127]
+
+  16990374: # Emergent Elm placeholder
+    region: null
+    at:     [86.000, -35.000, 621.000, 127]
+
+  16990398: # Nis Puk placeholder
+    region: null
+    at:     [-119.000, -15.000, -651.000, 127]

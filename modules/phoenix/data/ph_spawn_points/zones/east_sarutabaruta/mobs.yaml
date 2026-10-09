@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17252488: # Sharp-Eared Ropipi placeholder
+    region: null
+    at:     [227.825, -16.978, -317.467, 82]
+
+  17252656: # Spiny Spipi placeholder
+    region: null
+    at:     [285.575, -12.656, 126.129, 127]

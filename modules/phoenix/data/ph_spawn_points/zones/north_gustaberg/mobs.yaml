@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17211536: # Stinging Sophie placeholder
+    region: null
+    at:     [197.369, -40.612, 453.688, 5]
+
+  17211560: # Stinging Sophie placeholder
+    region: null
+    at:     [356.544, -40.528, 570.302, 110]
+
+  17211701: # Maighdean Uaine placeholder
+    region: null
+    at:     [176.458, -0.347, 722.666, 109]

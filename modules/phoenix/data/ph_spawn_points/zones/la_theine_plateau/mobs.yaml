@@ -1,0 +1,8 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17195258: # Tumbling Truffle placeholder
+    region: null
+    at:     [484.999, 70.710, 259.801, 127]

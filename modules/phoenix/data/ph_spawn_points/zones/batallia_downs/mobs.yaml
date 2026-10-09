@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17207449: # Tottering Toby placeholder
+    region: null
+    at:     [-194.234, -18.485, 132.208, 127]
+
+  17207599: # Eyegouger placeholder
+    region: null
+    at:     [172.660, -3.176, -26.259, 40]
+
+  17207635: # Prankster Maverix placeholder
+    region: null
+    at:     [236.000, 8.000, -315.000, 127]

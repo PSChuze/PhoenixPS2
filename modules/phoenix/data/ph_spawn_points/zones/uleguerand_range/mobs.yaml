@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  16797768: # Skvader placeholder
+    region: null
+    at:     [162.006, -0.677, -271.423, 251]
+
+  16797967: # Magnotaur placeholder
+    region: null
+    at:     [-262.568, -183.774, 434.284, 233]
+
+  16798055: # Bonnacon placeholder
+    region: null
+    at:     [-581.525, -38.463, -61.703, 153]

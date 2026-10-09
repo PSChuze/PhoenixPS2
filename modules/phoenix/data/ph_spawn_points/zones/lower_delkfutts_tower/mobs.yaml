@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17530882: # Epialtes placeholder
+    region: null
+    at:     [432.952, -0.350, -3.719, 127]
+
+  17531001: # Hippolytos placeholder
+    region: null
+    at:     [338.454, -16.124, 28.625, 127]
+
+  17531118: # Eurymedon placeholder
+    region: null
+    at:     [397.252, -32.128, -32.807, 35]

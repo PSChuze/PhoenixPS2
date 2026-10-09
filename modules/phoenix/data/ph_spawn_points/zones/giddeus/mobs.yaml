@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17371296: # Juu Duzu the Whirlwind placeholder
+    region: null
+    at:     [121.737, 0.500, -224.966, 127]
+
+  17371513: # Hoo Mjuu the Torrent placeholder
+    region: null
+    at:     [-39.073, 0.597, -115.279, 28]
+
+  17371577: # Vuu Puqu the Beguiler placeholder
+    region: null
+    at:     [-23.973, 0.459, -399.155, 95]

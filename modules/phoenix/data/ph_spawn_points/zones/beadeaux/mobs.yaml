@@ -1,0 +1,24 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17379350: # BiGho Headtaker placeholder
+    region: null
+    at:     [-98.611, 0.498, 71.212, 127]
+
+  17379426: # DaDha Hundredmask placeholder
+    region: null
+    at:     [-71.480, 0.490, -62.882, 127]
+
+  17379447: # GeDha Evileye placeholder
+    region: null
+    at:     [-242.709, 0.500, -188.010, 127]
+
+  17379562: # ZoKhu Blackcloud placeholder
+    region: null
+    at:     [-294.223, -3.504, -206.657, 127]
+
+  17379625: # GaBhu Unvanquished placeholder
+    region: null
+    at:     [139.642, -2.445, 161.557, 127]

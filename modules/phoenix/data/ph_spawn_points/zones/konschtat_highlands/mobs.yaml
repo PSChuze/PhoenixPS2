@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17219791: # Stray Mary placeholder
+    region: null
+    at:     [-305.204, -11.695, -96.078, 127]
+
+  17219928: # Stray Mary placeholder
+    region: null
+    at:     [-293.900, 33.393, 342.710, 127]

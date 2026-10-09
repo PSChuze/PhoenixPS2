@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17244263: # Donnergugi placeholder
+    region: null
+    at:     [226.994, -8.488, 390.203, 93]
+
+  17244395: # Dune Widow placeholder
+    region: null
+    at:     [-85.000, 2.952, -46.000, 28]

@@ -1,0 +1,40 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17649730: # Lord of Onzozo placeholder
+    region: null
+    at:     [-39.356, 14.265, -60.406, 127]
+
+  17649760: # Peg Powler placeholder
+    region: null
+    at:     [-104.000, 4.000, 28.000, 127]
+
+  17649783: # Narasimha placeholder
+    region: null
+    at:     [-119.897, 0.275, 127.060, 127]
+
+  17649787: # Narasimha placeholder
+    region: null
+    at:     [-126.841, -0.554, 129.681, 31]
+
+  17649797: # Hellion placeholder
+    region: null
+    at:     [136.566, 14.708, 70.077, 127]
+
+  17649817: # Ose placeholder
+    region: null
+    at:     [53.826, 4.287, 143.153, 127]
+
+  17649820: # Ose placeholder
+    region: null
+    at:     [-7.233, 4.976, 204.202, 83]
+
+  17649829: # Soulstealer Skullnix placeholder
+    region: null
+    at:     [13.729, 4.814, 166.295, 127]
+
+  17649837: # Soulstealer Skullnix placeholder
+    region: null
+    at:     [29.024, 3.474, 185.723, 184]

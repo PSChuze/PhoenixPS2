@@ -1,0 +1,12 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17436878: # Marquis Sabnock placeholder
+    region: null
+    at:     [65.242, -8.500, -138.748, 254]
+
+  17436879: # Marquis Sabnock placeholder
+    region: null
+    at:     [59.559, -8.500, -131.169, 127]

@@ -1,0 +1,16 @@
+# Lottery placeholders on the fixed spawn points they had before roam regions.
+# Generated from sql/mob_spawn_points.sql at 3b73f021e44^. Do not edit by hand.
+
+spawns:
+
+  17293376: # Slippery Sucker placeholder
+    region: null
+    at:     [74.000, -19.000, 7.000, 119]
+
+  17293380: # Slippery Sucker placeholder
+    region: null
+    at:     [51.665, -20.414, -26.076, 75]
+
+  17293536: # Trickster Kinetix placeholder
+    region: null
+    at:     [-137.651, -23.507, 231.528, 127]
