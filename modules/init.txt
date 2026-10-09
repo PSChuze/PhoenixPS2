@@ -40,6 +40,8 @@
 
 # Sql things first
 phoenix/sql
+# Stack sizes that need the edited item DATs; remove for clients on unedited DATs
+phoenix/dat_stack_sizes
 era/sql/abyssea
 era/sql/rov
 era/sql/soa
