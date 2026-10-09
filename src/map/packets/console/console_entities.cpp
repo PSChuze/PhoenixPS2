@@ -103,7 +103,7 @@ struct Tables
         // client -> server
         c2s[0x015] = { A(0x16) };          // POS facetarget
         c2s[0x016] = { A(0x04) };          // CHARREQ
-        c2s[0x017] = { A(0x04) };          // CHARREQ2
+        c2s[0x017] = { A(0x04), U(0x08), U(0x0C) }; // CHARREQ2: ActIndex, UniqueNo2, UniqueNo3
         c2s[0x01A] = { U(0x04), A(0x08) }; // ACTION
         c2s[0x01C] = { A(0x04) };
         c2s[0x036] = { U(0x04), A(0x3A) }; // ITEM_TRANSFER (trade to an NPC)
